@@ -1,0 +1,9 @@
+2a60927148abd1d33b818b535e306557
+::res://::1687104332
+game.tscn::PackedScene::6520337830456013332::1685472897::0::1::::<><>::uid://kxtj7b33b0a8<>res://objects/player.tscn
+icon.svg::CompressedTexture2D::8616254904594770457::1678641534::1678641553::1::::<><>::
+level_mat.tres::StandardMaterial3D::750540503333092109::1685471918::0::1::::<><>::
+::res://objects/::1687104321
+CameraFollowTarget.gd::GDScript::-1::1687104321::0::1::::<>Node3D<>::
+Player.gd::GDScript::-1::1685472896::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::-1::1683989995::0::1::::<><>::res://objects/Player.gd

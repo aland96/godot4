@@ -1,0 +1,4 @@
+res://game.tscn
+res://level_mat.tres
+res://objects/CameraFollowTarget.gd
+res://objects/Player.gd
