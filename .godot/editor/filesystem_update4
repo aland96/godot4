@@ -1,4 +1,5 @@
-res://game.tscn
+res://objects/props/floor.tscn
 res://level_mat.tres
-res://objects/CameraFollowTarget.gd
-res://objects/Player.gd
+res://game.tscn
+res://objects/props/box.tscn
+res://objects/props/platform.tscn
