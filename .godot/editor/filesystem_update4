@@ -1,5 +1,3 @@
-res://objects/props/floor.tscn
-res://level_mat.tres
+res://objects/player/anim_run.res
+res://objects/player.tscn
 res://game.tscn
-res://objects/props/box.tscn
-res://objects/props/platform.tscn

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cy5ranhodxqsi"]
 
 [ext_resource type="Script" path="res://objects/CameraFollowTarget.gd" id="1_d8k1f"]
-[ext_resource type="PackedScene" path="res://objects/player.tscn" id="1_na08u"]
+[ext_resource type="PackedScene" uid="uid://4lnjluof8527" path="res://objects/player.tscn" id="1_na08u"]
 [ext_resource type="PackedScene" uid="uid://b4tggrtkdxyw5" path="res://objects/props/floor.tscn" id="3_k4d3q"]
 [ext_resource type="PackedScene" uid="uid://compnncnokdgt" path="res://objects/props/box.tscn" id="4_fbrut"]
 [ext_resource type="PackedScene" uid="uid://darneds0ew5hc" path="res://objects/props/platform.tscn" id="5_elfgf"]
@@ -37,6 +37,7 @@ target = NodePath("../Player")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 10)
 
 [node name="Player" parent="." instance=ExtResource("1_na08u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Level" type="Node3D" parent="."]
 metadata/_edit_lock_ = true
