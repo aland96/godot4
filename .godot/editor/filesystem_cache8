@@ -1,6 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1690041457
-game.tscn::PackedScene::6520337830456013332::1690041437::0::1::::<><>::res://objects/CameraFollowTarget.gd<>uid://4lnjluof8527<>uid://b4tggrtkdxyw5<>uid://compnncnokdgt<>uid://darneds0ew5hc
+::res://::1692537477
+game.tscn::PackedScene::6520337830456013332::1690041622::0::1::::<><>::res://objects/CameraFollowTarget.gd<>uid://4lnjluof8527<>uid://b4tggrtkdxyw5<>uid://compnncnokdgt<>uid://darneds0ew5hc
 icon.svg::CompressedTexture2D::8616254904594770457::1678641534::1678641553::1::::<><>::
 level_mat.tres::StandardMaterial3D::750540503333092109::1688910054::0::1::::<><>::
 ::res://assets/::1688909712
@@ -19,8 +19,8 @@ walk.wav::AudioStreamWAV::3960151590900106399::1676719279::1688909711::1::::<><>
 cloudLayer1.png::CompressedTexture2D::8084819805747072127::1551269235::1688909711::1::::<><>::
 License.txt::TextFile::-1::1677319458::0::1::::<><>::
 Sample.png::CompressedTexture2D::8567227971325748388::1551269512::1688909711::1::::<><>::
-::res://assets/godot-robot/::1690040921
-3DGodotRobot.glb::PackedScene::8530724558775436894::1676283681::1690040921::1::::<><>::
+::res://assets/godot-robot/::1690041473
+3DGodotRobot.glb::PackedScene::8530724558775436894::1676283681::1690041473::1::::<><>::
 3DGodotRobot_GodotPalette.png::CompressedTexture2D::7315561590400961814::1676283763::1690039550::1::::<><>::
 ::res://assets/music/::1688909711
 POL-treasure-match-short.wav::AudioStreamWAV::3154200483907428763::1604058049::1688909711::1::::<><>::
@@ -56,12 +56,12 @@ spikesHidden.glb::PackedScene::5360680178258273807::1670242297::1688909712::1:::
 stones.glb::PackedScene::8685265853156422057::1670242297::1688909712::1::::<><>::
 tree.glb::PackedScene::4815705753004373186::1670242297::1688909712::1::::<><>::
 treePineSmall.glb::PackedScene::9210099369068993529::1670242298::1688909712::1::::<><>::
-::res://objects/::1690041437
+::res://objects/::1690041577
 CameraFollowTarget.gd::GDScript::-1::1687104731::0::1::::<>Node3D<>::
 Player.gd::GDScript::-1::1690040698::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::2058990623145754950::1690041437::0::1::::<><>::res://objects/Player.gd<>uid://dchyh3suk20q1<>uid://hql0ak8mw571<>uid://bwoleaspv8408
-::res://objects/player/::1690041309
-anim_run.res::Animation::2670119953603182046::1690041309::0::1::::<><>::
+player.tscn::PackedScene::2058990623145754950::1690041577::0::1::::<><>::res://objects/Player.gd<>uid://hql0ak8mw571<>uid://dtsl106kitbu1<>uid://bwoleaspv8408
+::res://objects/player/::1690041577
+anim_run.res::Animation::2670119953603182046::1690041577::0::1::::<><>::
 ::res://objects/props/::1688910794
 box.tscn::PackedScene::5781192368082560059::1688910794::0::1::::<><>::uid://bk0c1iwpoxe6h
 floor.tscn::PackedScene::4461496265950736210::1688910794::0::1::::<><>::uid://dd1viaj6d3oj5

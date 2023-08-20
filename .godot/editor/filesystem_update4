@@ -1,3 +1,7 @@
-res://objects/player/anim_run.res
-res://objects/player.tscn
 res://game.tscn
+res://objects/coin/coin.tscn
+res://objects/player.tscn
+res://objects/Player.gd
+res://objects/coin/coin.gd
+res://game.gd
+res://levels/level.tscn
