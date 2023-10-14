@@ -1,7 +1,7 @@
-res://game.tscn
-res://objects/coin/coin.tscn
+res://levels/level.tscn
+res://objects/props/crate.tscn
+res://objects/props/crate.gd
 res://objects/player.tscn
 res://objects/Player.gd
-res://objects/coin/coin.gd
-res://game.gd
-res://levels/level.tscn
+res://game.tscn
+res://objects/coin/coin.tscn

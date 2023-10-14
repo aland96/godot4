@@ -1,0 +1,115 @@
+[gd_scene load_steps=9 format=3 uid="uid://dsn6gyp2x08nu"]
+
+[ext_resource type="PackedScene" uid="uid://dnvjd5bdriuhe" path="res://assets/platformer-kit-2.2/Models/crateItem.glb" id="1_pgy3u"]
+[ext_resource type="Script" path="res://objects/props/crate.gd" id="1_uh01k"]
+[ext_resource type="AudioStream" uid="uid://bc4ni7csb7esk" path="res://assets/audio/coin.wav" id="3_md56v"]
+[ext_resource type="PackedScene" uid="uid://cxxkse4jna8qp" path="res://assets/platformer-kit-2.2/Models/coinGold.glb" id="4_316yh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5xmex"]
+size = Vector3(1.5, 1.5, 1.5)
+
+[sub_resource type="Animation" id="Animation_pfqwf"]
+resource_name = "hit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crateItem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0812477, 0.5),
+"transitions": PackedFloat32Array(1, 0.5, 1),
+"update": 0,
+"values": [Vector3(3, 3, 3), Vector3(3.2, 3.2, 3.2), Vector3(3, 3, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("coinGold:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.20223, 0.5),
+"transitions": PackedFloat32Array(0.5, 2, 1),
+"update": 0,
+"values": [Vector3(0, 0.176086, 0), Vector3(0, 2, 0), Vector3(0, 0.117025, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("coinGold:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wahrd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crateItem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3, 3, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("coinGold:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.176086, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("coinGold:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xt2mh"]
+_data = {
+"RESET": SubResource("Animation_wahrd"),
+"hit": SubResource("Animation_pfqwf")
+}
+
+[node name="Crate" type="StaticBody3D"]
+script = ExtResource("1_uh01k")
+
+[node name="crateItem" parent="." instance=ExtResource("1_pgy3u")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+shape = SubResource("BoxShape3D_5xmex")
+
+[node name="CoinSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_md56v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xt2mh")
+}
+
+[node name="coinGold" parent="." instance=ExtResource("4_316yh")]
+transform = Transform3D(2.8, 0, 0, 0, 2.8, 0, 0, 0, 2.8, 0, 0.176086, 0)

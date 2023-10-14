@@ -1,8 +1,9 @@
-AudioStreamPlayer
+AnimationPlayer
 CollisionShape3D
+StaticBody3D
+AudioStreamPlayer
 Area3D
 Node3D
-StaticBody3D
 CharacterBody3D
 MeshInstance3D
 Camera3D

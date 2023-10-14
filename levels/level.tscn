@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://6yv2amj6qwaa"]
+[gd_scene load_steps=6 format=3 uid="uid://6yv2amj6qwaa"]
 
 [ext_resource type="PackedScene" uid="uid://b4tggrtkdxyw5" path="res://objects/props/floor.tscn" id="1_21qk3"]
 [ext_resource type="PackedScene" uid="uid://compnncnokdgt" path="res://objects/props/box.tscn" id="2_mv4i6"]
 [ext_resource type="PackedScene" uid="uid://darneds0ew5hc" path="res://objects/props/platform.tscn" id="3_o1r71"]
 [ext_resource type="PackedScene" uid="uid://cm6ochyxexpb4" path="res://objects/coin/coin.tscn" id="4_elgbq"]
+[ext_resource type="PackedScene" uid="uid://dsn6gyp2x08nu" path="res://objects/props/crate.tscn" id="5_yx5gg"]
 
 [node name="Level" type="Node3D"]
 metadata/_edit_lock_ = true
@@ -59,10 +60,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 14, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 14, 0)
 
 [node name="Coin1" parent="." instance=ExtResource("4_elgbq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 9, 0)
 
 [node name="Coin2" parent="." instance=ExtResource("4_elgbq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 16, 0)
 
 [node name="Coin3" parent="." instance=ExtResource("4_elgbq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 5, 0)
@@ -72,3 +73,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 9, 0)
 
 [node name="Coin5" parent="." instance=ExtResource("4_elgbq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 16, 0)
+
+[node name="Crate" parent="." instance=ExtResource("5_yx5gg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 4, 0)
+
+[node name="Crate2" parent="." instance=ExtResource("5_yx5gg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 13, 0)
+coins = 3
+
+[node name="Box2" parent="." instance=ExtResource("2_mv4i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.286, 1, 0)
