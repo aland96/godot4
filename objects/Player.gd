@@ -12,6 +12,7 @@ var initial_position: Vector3
 
 @onready var anims = $"3DGodotRobot/AnimationPlayer"
 const ROTATIO_DEGREES_RIGHT = 90
+const ROTATIO_DEGREES_FRONT = 0
 const ROTATIO_DEGREES_LEFT = -90
 
 func _ready():
@@ -57,3 +58,9 @@ func _physics_process(delta):
 	
 	if position.y < DEATH_POS_Y:
 		position = initial_position
+
+
+func animate_victory():
+	set_physics_process(false)
+	anims.play("Emote1")
+	rotation_degrees.y = ROTATIO_DEGREES_FRONT

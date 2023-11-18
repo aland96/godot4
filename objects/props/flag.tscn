@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnyjl2f1wg38t"]
+
+[ext_resource type="PackedScene" uid="uid://cqc6k3nu5812m" path="res://assets/platformer-kit-2.2/Models/flag.glb" id="1_1ljco"]
+[ext_resource type="Script" path="res://objects/props/flag.gd" id="1_nhj5w"]
+[ext_resource type="AudioStream" uid="uid://xc5ioug45q4r" path="res://assets/audio/victory.wav" id="3_016y8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l8qd1"]
+
+[node name="Flag" type="Area3D"]
+script = ExtResource("1_nhj5w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.341356, 0.977521, 0)
+shape = SubResource("CapsuleShape3D_l8qd1")
+
+[node name="VictorySFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_016y8")
+
+[node name="flag" parent="." instance=ExtResource("1_1ljco")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

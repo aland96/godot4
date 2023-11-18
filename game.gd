@@ -10,4 +10,11 @@ func _ready():
 			coins += 1
 			print("Coins: ", coins)
 			)
-	pass # Replace with function body.
+	var flag = find_child("Flag")
+	if flag: 
+		flag.connect("level_completed", func():
+			$Player.animate_victory()
+			$CameraFollowTarget.animate_victory()
+			await get_tree().create_timer(3).timeout
+			get_tree().reload_current_scene()
+			)

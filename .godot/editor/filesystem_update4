@@ -1,7 +1,10 @@
 res://levels/level.tscn
-res://objects/props/crate.tscn
-res://objects/props/crate.gd
-res://objects/player.tscn
-res://objects/Player.gd
+res://objects/props/flag.tscn
+res://objects/props/flag.gd
 res://game.tscn
 res://objects/coin/coin.tscn
+res://objects/player.tscn
+res://objects/props/crate.tscn
+res://objects/Player.gd
+res://game.gd
+res://objects/CameraFollowTarget.gd
